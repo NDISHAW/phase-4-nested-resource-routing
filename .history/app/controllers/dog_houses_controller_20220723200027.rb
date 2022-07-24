@@ -15,7 +15,6 @@ class DogHousesController < ApplicationController
     review = Review.find(params[:id])
     render json: review, include: :dog_house
   end
-  
   private
 
   def render_not_found_response
